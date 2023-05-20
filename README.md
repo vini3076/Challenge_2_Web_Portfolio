@@ -20,11 +20,12 @@ Built my personal web portfolio which will showcase my projects which I will be 
 
 # Screenshots
 
-![Screenshot for project](./assets/PasswordGenerator.png)
+![Screenshot for project](./assets/images/MyPortfolio.png)
 
 
 # Link
 
-[Link to Github Repository](https://github.com/vini3076/Challenge3_Password_Generator)
+[Link to Github Repository](https://github.com/vini3076/Challenge_2_Web_Portfolio)
 
-[Link to Deployed page](https://vini3076.github.io/Challenge3_Password_Generator/)
+
+[Link to Deployed page](https://vini3076.github.io/Challenge_2_Web_Portfolio/)

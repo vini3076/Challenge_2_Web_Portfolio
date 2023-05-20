@@ -1,206 +1,170 @@
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-   
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 body {
-    background-color: rgb(213, 249, 240); 
-    height: 100%;
+  background-color: rgb(213, 249, 240);
+  height: 100%;
 }
 
-h1 {font-weight: 800;}
-h2 {font-weight: 700;}
-h3 {font-weight: 600;}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 600;
+}
 header {
-   display: flex;
-    padding: 20px;
-    flex: 1 0 0;
+  display: flex;
+  padding: 20px;
+  flex: 1 0 0;
   align-items: center;
   width: 100%;
-    background-color: turquoise;
-  
+  background-color: turquoise;
 }
 header nav {
-    /* Align the child elements to the right side of the parent */
-  
-    margin-right: 10px;
-    font-size: 20px;
-    display: flex;
+  margin-right: 10px;
+  font-size: 20px;
+  display: flex;
   flex: 1 0 0;
   justify-content: flex-end;
   padding: 10px 10px;
-    
 }
 
+header nav li {
+  display: inline-block;
+  margin-left: 25px;
+}
 
-header nav li{
-    display: inline-block;
-    margin-left: 25px; 
-    
- }
+main {
+  min-width: 100%;
+}
 
- main {
-    min-width: 100%;
- }
-
- section{
-    display: flex;
- }
+section {
+  display: flex;
+}
 
 .about-me-info {
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
+  border: 2px solid turquoise;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
 }
 .about-me-info p {
-    margin-top: 20px;
-    font-size: 20px;
- 
- }
- .intro {
-    display: flex;
- }
-
- .intro img {
-    display: inline;
-        padding: 20px;
-        border-radius: 50%;
-      }
- 
-.projects {
-    margin: 20px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* width: 100%; */
+  margin-top: 20px;
+  font-size: 20px;
+}
+.intro {
+  display: flex;
 }
 
-.projects h2{
-display: flexbox;
-margin-bottom: 20px;
-flex: 1 1 50%;
+.intro img {
+  display: inline;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.projects {
+  margin: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projects h2 {
+  display: flexbox;
+  margin-bottom: 20px;
+  flex: 1 1 50%;
 }
 .cards {
-    display: flex;
-    min-width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1 1 50%;
+  display: flex;
+  min-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 50%;
   align-items: center;
   overflow: 0;
-  gap: 2rem;
 }
 .card {
-  margin: 20px 100px 20px 100px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   justify-content: center;
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 350px;
+  max-height: 350px;
   padding: 20px;
   align-items: center;
   border: 2px solid turquoise;
+}
 
-  
-  }
-
-  .card:first-child{
- min-height: 600px;
- max-height: 600px;
- flex: 2 0 100%;
- flex-wrap: wrap;
- flex-basis: 100%;
- flex-shrink: inherit;
- align-items: center;
- margin: 0 500px 0 500px;
- 
-
-  }
-
-/*
-  .card-other {
-    width:200px;
-    flex: 2 0 40%;
-    border: 2px solid turquoise;
-
-  }
-  */
+.card:first-child {
+  min-height: 400px;
+  max-height: 400px;
+}
 
 
 .card h3 {
-padding: 10px;
-align-items: center;
+  padding: 10px;
+  align-items: center;
 }
-  .card img {
-    width: 300px;
-    /*height: 400px;*/
-    border: 2px solid turquoise;
+.card img {
+  width: 400px;
+  border: 2px solid turquoise;
+}
 
+.card-main {
+  width: 600px !important;
+}
 
-  }
+.card:hover {
+  background-color: turquoise;
+}
 
-  .card-main {
-    width: 800px !important;
-    /*
-    width:50%; 
-    display: flex;
-    flex: 2 0 80%;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 2px solid turquoise;
-*/
-  }
-  
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+}
 
+.contact {
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  background-color: turquoise;
+}
 
-  .card:hover {
-    background-color: turquoise;
-  }
+.contact h2 {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+}
 
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 6em; 
-    width: 100%;
-    position: absolute;
-  }
-  
-  
-  .contact{
-    flex: 1 0 0;
-    flex-wrap: wrap;
-    background-color: turquoise;
-  }
+.icon-bar {
+  width: 80%; /* Full-width */
+  flex-wrap: wrap;
+  overflow: auto; /* Overflow due to float */
+}
 
+.icon-bar a {
+  flex-wrap: wrap;
+  float: left; 
+  text-align: center; 
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 5px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: black;
+  font-size: 20px; /* Increased font size */
+}
 
-
- .contact h2{
-    display: flex;
-    text-align: center;
- }
-
-  .icon-bar {
-    width: 100%; /* Full-width */
-    flex-wrap: wrap;
-    overflow: auto; /* Overflow due to float */
-    }
-
-    .icon-bar a {
-        flex-wrap: wrap;
-        float: left; /* Float links side by side */
-        text-align: center; /* Center-align text */
-        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-        padding: 10px 0; /* Some top and bottom padding */
-        transition: all 0.3s ease; /* Add transition for hover effects */
-        color: black;
-        font-size: 25px; /* Increased font size */
-      }
+.icon-bar a:hover {
+  background-color: aliceblue;
+}

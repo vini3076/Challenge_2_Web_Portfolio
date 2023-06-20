@@ -121,6 +121,7 @@ section {
 
 .card-main {
   width: 600px !important;
+  height: 350px;
 }
 
 .card:hover {
